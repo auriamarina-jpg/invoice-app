@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-*j+adtw(*q&e07xavy6abme$c97jp2fgscl$pd(jbrr3l*ysu5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "invoice-app-k0nr.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
+
 
 
 # Application definition
