@@ -1,7 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
-from django.http import HttpResponse
-
 def home(request):
-    return HttpResponse("Bienvenue sur l'application de facturation")
+    return render(request, "suppliers/home.html")
+
