@@ -1,0 +1,19 @@
+<h2>Novo Fornecedor</h2>
+
+<form method="post">
+    {% csrf_token %}
+    <p>
+        Nome<br>
+        <input type="text" name="nome" required>
+    </p>
+    <p>
+        Email<br>
+        <input type="email" name="email">
+    </p>
+    <p>
+        Telefone<br>
+        <input type="text" name="telefone">
+    </p>
+
+    <button type="submit">Salvar</button>
+</form>

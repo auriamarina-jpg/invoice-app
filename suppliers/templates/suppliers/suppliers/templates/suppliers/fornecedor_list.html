@@ -1,0 +1,11 @@
+<h2>Fornecedores</h2>
+
+<a href="{% url 'fornecedor_create' %}">➕ Novo Fornecedor</a>
+
+<ul>
+    {% for f in fornecedores %}
+    <li>{{ f.nome }} — {{ f.email }} — {{ f.telefone }}</li>
+    {% empty %}
+    <li>Aucun fornecedor</li>
+    {% endfor %}
+</ul>
