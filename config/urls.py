@@ -20,3 +20,18 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+
+
+from django.urls import path
+from .views import home
+
+urlpatterns = [
+    path("", home, name="home"),
+]
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("", include("suppliers.urls")),
+]
